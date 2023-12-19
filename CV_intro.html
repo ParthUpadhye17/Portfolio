@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="CSS/CV_introcss1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="display">
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="CV_main.html" target="_blank" ">PORTFOLIO</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#sent/KtbxLxGgJnkmPjKLhkQkRDDDgfqlmfqxwL?compose=new">GMAIL</a></li>
+                <li><img src="images/moon.png" alt="dark" id="icon"><li>
+            </ul>
+       
+        </nav>
+        <div class="info">
+            <h1><span>WELCOME,</span></h1>
+            <p>I am Parth Upadhye. This is my official portfolio webite to showcase my all <br> works related to web developement and a programming.</p>
+            <a href="CV_main.html" target="_blank" >MY RESUME</a>
+        </div>
+        <div class="imgBox">
+            <img src="images/BG2.png" alt="background" class="bgimg">
+        </div>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/parth-upadhye-897735294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://x.com/ParthUpadhye17?t=CwXSEzDQajtAMmw18Z9v0g&s=08" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+    <script>
+        var icon= document.getElementById("icon");
+
+        icon.onclick=function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src="images/sun.png";
+            }else{
+                icon.src="images/moon.png";
+            }
+        }
+    </script>
+</body>
+</html>
